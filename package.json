@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "postinstall": "dotenv -e .env -- prisma generate",
+    "postinstall": "prisma generate",
     "start": "npm run build && node dist/server.js"
   },
   "keywords": [],
