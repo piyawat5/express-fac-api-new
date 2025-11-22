@@ -4,8 +4,9 @@
   "main": "server.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec tsx server.ts"
+    "build": "tsc",
+    "postinstall": "prisma generate",
+    "start": "npm run build && node dist/server.js"
   },
   "keywords": [],
   "author": "",
